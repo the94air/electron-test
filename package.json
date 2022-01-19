@@ -3,13 +3,6 @@
   "version": "0.1.0",
   "description": "Boilerplate for a Vue + Webpack configuration with Electron.",
   "main": "electron/index.js",
-  "repository": "https://github.com/Andr3wRiv3rs/electron-vue-boilerplate",
-  "author": {
-    "name": "Andres Sweeney-Rios",
-    "email": "andrewarivers@gmail.com",
-    "url": "https://poisonapple.dev"
-  },
-  "license": "MIT",
   "private": false,
   "scripts": {
     "start": "electron dist",
