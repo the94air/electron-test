@@ -37,18 +37,6 @@
   "build": {
     "appId": "com.testapp.elect.app",
     "npmRebuild": true,
-    "mac": {
-      "icon": "assets/icon.png",
-      "target": [
-        "dmg"
-      ]
-    },
-    "linux": {
-      "icon": "assets/icon.png",
-      "target": [
-        "deb"
-      ]
-    },
     "win": {
       "icon": "assets/icon.png",
       "target": [
