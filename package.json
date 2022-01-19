@@ -17,7 +17,7 @@
     "build": "npm run build:webpack && npm run build:electron",
     "lint": "eslint --fix",
     "build:webpack": "cross-env NODE_ENV=production webpack --production",
-    "build:electron": "cross-env NODE_ENV=production node ./prebuild && electron-builder"
+    "build:electron": "cross-env NODE_ENV=production node ./prebuild && electron-builder --win"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -41,11 +41,30 @@
     "webpack-dev-server": "^3.11.0"
   },
   "build": {
+    "appId": "com.testapp.elect.app",
     "npmRebuild": true,
+    "mac": {
+      "icon": "assets/icon.png",
+      "target": [
+        "dmg"
+      ]
+    },
+    "linux": {
+      "icon": "assets/icon.png",
+      "target": [
+        "deb"
+      ]
+    },
     "win": {
       "icon": "assets/icon.png",
       "target": [
-        "zip"
+        {
+          "target": "msi",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
       ]
     },
     "directories": {
