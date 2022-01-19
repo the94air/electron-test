@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Boilerplate for a Vue + Webpack configuration with Electron.",
   "main": "electron/index.js",
+  "author": "the94air",
   "private": false,
   "scripts": {
     "start": "electron dist",
@@ -35,7 +36,6 @@
   },
   "build": {
     "appId": "com.testapp.elect.app",
-    "author": "the94air",
     "npmRebuild": true,
     "mac": {
       "icon": "assets/icon.png",
