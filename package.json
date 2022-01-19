@@ -9,7 +9,7 @@
     "start": "electron dist",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "npm run build:webpack && npm run build:electron",
-    "build:ci": "npm run build:webpack",
+    "build:ci": "npm run build:webpack && cross-env NODE_ENV=production node ./prebuild",
     "lint": "eslint --fix",
     "build:webpack": "cross-env NODE_ENV=production webpack --production",
     "build:electron": "cross-env NODE_ENV=production node ./prebuild && electron-builder --win"
