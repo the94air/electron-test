@@ -35,6 +35,7 @@
   },
   "build": {
     "appId": "com.testapp.elect.app",
+    "author": "the94air",
     "npmRebuild": true,
     "mac": {
       "icon": "assets/icon.png",
